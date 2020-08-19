@@ -7,9 +7,16 @@
     "lint": "prettier --check \"src/**/*.js\""
   },
   "dependencies": {
-    "canvas-confetti": "^1.2.0"
+    "rellax": "^1.12.1"
   },
   "devDependencies": {
+    "@csstools/postcss-sass": "^4.0.0",
+    "@snowpack/plugin-run-script": "^2.1.0",
+    "autoprefixer": "^9.8.6",
+    "dart-sass": "^1.25.0",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1",
+    "postcss-scss": "^2.1.1",
     "prettier": "^2.0.5",
     "snowpack": "^2.8.0"
   }

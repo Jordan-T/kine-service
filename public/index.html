@@ -1,27 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <title>Kiné service</title>
   </head>
   <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="c-header">
+      <div class="c-header__wrapper o-wrapper">
+        <a href="#" class="c-logo pt-2 pb-2">
+          <img id="img" width="200" height="35" src="//placehold.it/200x35" alt="Kiné service" />
+        </a>
+        <nav class="c-header__nav c-nav js-nav">
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Bilan</a></li>
+            <li><a href="#">Videos</a></li>
+            <li>
+              <a href="#">Auto-évaluation</a>
+              <ul>
+                <li><a href="#">Theme 1</a></li>
+                <li><a href="#">Theme 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Admin</a></li>
+          </ul>
+        </nav>
+        <button class="c-header__nav-toggle js-toggle-nav" type="button" aria-label="Afficher navigation"><span></span></button>
+      </div>
+    </header>
+
+    <div class="c-hero">
+      <picture class="c-hero__image">
+        <source type="image/webp" media="(min-width: 1921px)" srcset="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_2550,h_1370,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.webp" />
+        <source type="image/jpeg" media="(min-width: 1921px)" srcset="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_2550,h_1370,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpeg" />
+
+        <source type="image/webp" media="(min-width: 1281px) and (max-width: 1920px)" srcset="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_1920,h_1000,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.webp" />
+        <source type="image/png" media="(min-width: 1281px) and (max-width: 1920px)" srcset="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_1920,h_1000,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpeg" />
+
+        <source type="image/webp" media="(max-width: 1280px)" srcset="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_1080,h_900,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.webp" />
+        <source type="image/png" media="(max-width: 1280px)" srcset="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_1080,h_900,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpeg" />
+
+
+        <img src="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_1920,h_1000,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpeg" />
+      </picture>
+      <div class="c-hero__main">
+        <div class="o-wrapper">
+          <p>Stratégies et innovations</p>
+          <h1 class="c-hero__title">coaching et conseil</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-section">
+      <div class="c-section__wrapper o-wrapper">
+        <div class="c-cards">
+          <div class="c-card js-appear">
+            <h2 class="c-card__title">Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem. Quisquam perferendis quibusdam, dicta non libero delectus nesciunt praesentium tenetur iusto neque sunt placeat. Consequatur molestias dignissimos non blanditiis culpa!</p>
+            <div class="c-card__footer">
+              <a href="#" class="c-button">En savoir plus</a>
+            </div>
+          </div>
+          <div class="c-card js-appear">
+            <h2 class="c-card__title">Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem.</p>
+            <div class="c-card__footer">
+              <a href="#" class="c-button">En savoir plus</a>
+            </div>
+          </div>
+          <div class="c-card js-appear">
+            <h2 class="c-card__title">Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem. Quisquam perferendis quibusdam, dicta non libero delectus nesciunt praesentium tenetur iusto neque sunt placeat. Consequatur molestias dignissimos non blanditiis culpa!</p>
+            <div class="c-card__footer">
+              <a href="#" class="c-button">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="c-footer">
+      <div class="c-footer__wrapper o-wrapper">
+        <div class="c-footer__copy">&copy; 2020 par Kiné service</div>
+        <div class="c-footer__socials c-socials">
+          <a href="#" class="c-social"><img src="//placehold.it/20x20?text=F" alt="Facebook"></a>
+          <a href="#" class="c-social"><img src="//placehold.it/20x20?text=T" alt="Twitter"></a>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/_dist_/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

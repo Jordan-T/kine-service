@@ -1,11 +1,48 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import Rellax from 'rellax';
 
-import confetti from 'canvas-confetti';
+// parallax
+new Rellax('.c-hero__image', {
+  speed: -3,
+  center: false,
+  wrapper: null,
+  round: true,
+  vertical: true,
+  horizontal: false
+});
 
-confetti.create(document.getElementById('canvas'), {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+// appear
+const appearBlocs = document.querySelectorAll('.js-appear');
+const threshold = .1;
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    console.log(entry, entry.intersectionRatio)
+    if (entry.intersectionRatio > threshold) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    // } else {
+    //   entry.target.classList.remove('is-visible');
+    }
+  });
+}, {
+  threshold
+});
+
+appearBlocs.forEach(block => {
+  block.classList.add('has-appear')
+  block.style.transition = 'none'
+  requestAnimationFrame(() => {
+    block.classList.add('has-appear')
+    block.style.transition = ''
+    observer.observe(block);
+  })
+});
+
+// nav
+const nav = document.querySelector('.js-nav');
+const toggleNav = document.querySelector('.js-toggle-nav');
+const onToggle = () => {
+  nav.classList.toggle('is-opened')
+  toggleNav.classList.toggle('is-opened')
+}
+
+toggleNav.addEventListener('click', onToggle)

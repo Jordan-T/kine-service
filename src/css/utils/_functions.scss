@@ -1,0 +1,26 @@
+$default-spacing-value: 3 !default;
+$spacing-values: ("0": 0, "1": 0.25rem, "2": 0.5rem, "3": 0.75rem, "4": 1rem, "5": 1.5rem, "6": 3rem) !default;
+
+/**
+ * Get the space based on key
+ * Start with a `-` for a negative value
+ */
+@function space($space-key: $default-spacing-value) {
+  $reverse: 1;
+
+  @if type-of($space-key) == number {
+    $space-key: "#{$space-key}";
+  }
+
+  $first-char: str-slice($space-key, 1, 1);
+  @if $first-char == "-" {
+    $reverse: -1;
+    $space-key: str-slice($space-key, 2);
+  }
+
+  @if map-has-key($spacing-values, $space-key) == false {
+    @error "The space #{$space-key} was not set in $spacing-values";
+  }
+
+  @return (map-get($spacing-values, $space-key) * $reverse)
+};

@@ -1,0 +1,134 @@
+// ==========
+// = internal
+// ==========
+// $container-max-width: 70.25rem;
+$container-max-width: 980px;
+
+// ==========
+// = bulma
+// ==========
+
+// - initial
+$black: var(--black);
+$black-bis: var(--grey-900);
+$black-ter: var(--grey-800);
+
+$grey-darker: var(--grey-700);
+$grey-dark: var(--grey-600);
+$grey: var(--grey);
+$grey-light: var(--grey-400);
+$grey-lighter: var(--grey-300);
+
+$white-ter: var(--grey-200);
+$white-bis: var(--grey-100);
+$white: #FFF;
+
+$blue:         #0d3c60;
+$purple:       hsl(271, 100%, 71%) !default;
+
+// $family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-sans-serif: "open sans", sans-serif;
+$family-monospace: monospace !default;
+$render-mode: optimizeLegibility !default;
+
+$family-default: raleway, sans-serif;
+$family-title: raleway, sans-serif;
+
+$size-1: 3rem !default;
+$size-2: 2.5rem !default;
+$size-3: 2rem !default;
+$size-4: 1.5rem !default;
+$size-5: 1.25rem !default;
+$size-6: 1rem !default;
+
+$weight-light: 300 !default;
+$weight-normal: 400 !default;
+$weight-medium: 500 !default;
+$weight-semibold: 600 !default;
+$weight-bold: 700 !default;
+
+$radius-small: 0.125rem;
+$radius: 0.25rem;
+$radius-large: 1rem;
+$radius-rounded: 999px;
+
+$size-7: .875rem;
+$size-8: .75rem;
+$gap: 15px;
+
+// - derived
+$light: $grey-lighter;
+$dark: $grey-darker !default;
+$blue-invert: $black;
+
+$primary: $blue;
+$primary-dark: var(--primary-dark);
+$primary-invert: $white;
+
+$success: var(--success);
+$success-dark: var(--success-dark);
+$success-invert: $black;
+
+$danger: var(--danger);
+$danger-dark: var(--danger-dark);
+$danger-invert: $black;
+
+$warning: var(--warning);
+$warning-dark: var(--warning-dark);
+$warning-invert: $black;
+
+$background: $grey-lighter;
+$light-invert: $dark !default;
+$dark-invert: $light !default;
+
+$border: $grey-lighter !default;
+$border-hover: $grey-light !default;
+
+$code: $grey-light;
+$code-background: $background;
+$pre: $grey-light;
+$pre-background: $background;
+
+$text: $blue !default;
+$text-invert: $white;
+$text-light: #6EA4CA !default;
+$text-lighter: #D1E0EB !default;
+$text-strong: $grey-darker !default;
+
+$link: $blue !default;
+$link-invert: $blue-invert !default;
+$link-visited: $purple !default;
+
+$link-hover: $grey-darker !default;
+$link-hover-border: $grey-light !default;
+
+$link-focus: $grey-darker !default;
+$link-focus-border: $blue !default;
+
+$link-active: $grey-darker !default;
+$link-active-border: $grey-dark !default;
+
+$family-primary: $family-sans-serif !default;
+$family-secondary: $family-sans-serif !default;
+$family-code: $family-monospace !default;
+
+$size-small: $size-8 !default;
+$size-normal: $size-7 !default;
+$size-medium: $size-6 !default;
+$size-large: $size-4 !default;
+
+$size-small: $size-8;
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 $size-8;
+
+
+// - others
+$hr-background-color: $background !default;
+$hr-height: 2px !default;
+$hr-margin: 1.5rem 0 !default;
+
+$spacing-values: ("0": 0, "1": 0.25rem, "2": 0.5rem, "3": 0.75rem, "4": 1rem, "5": 1.5rem, "6": 3rem);
+
+$body-background-color: $white;
+$body-size: 87.5%;
+
+
