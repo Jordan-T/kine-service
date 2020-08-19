@@ -377,15 +377,6 @@ a {
     &:focus {
       box-shadow: 0 0 space(2) $blue-light;
     }
-
-    &:invalid {
-      border-color: $danger;
-      color: $danger;
-
-      &:focus {
-        box-shadow: 0 0 space(2) $danger;
-      }
-    }
   }
 
   input[type="radio"] {
@@ -420,19 +411,33 @@ a {
     &:focus + label::before {
       border-color: $text-light;
     }
-
-    &:invalid + label::before {
-      border-color: $danger-light;
-    }
-
-    &:focus:invalid + label::before {
-      border-color: $danger;
-    }
   }
 
   [type="submit"] {
     @extend %c-button;
     margin-top: space(4);
+  }
+
+  &.is-validated {
+    select {
+      &:invalid {
+        border-color: $danger;
+        color: $danger;
+  
+        &:focus {
+          box-shadow: 0 0 space(2) $danger;
+        }
+      }
+    }
+    input[type="radio"] {
+      &:invalid + label::before {
+        border-color: $danger-light;
+      }
+
+      &:focus:invalid + label::before {
+        border-color: $danger;
+      }
+    }
   }
 }
 

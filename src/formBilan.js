@@ -4,6 +4,7 @@ if (form.length) {
   const select = document.getElementById('bilan_pb');
   const sections = form.querySelectorAll('.bilan_pb');
   const HIDDEN_CLASS = 'd-none';
+  const VALIDATED_CLASS = 'is-validated';
 
   const onChange = (e) => {
     const sectionNumber = e.target.value;
@@ -21,6 +22,7 @@ if (form.length) {
   let tempFirstError;
   const onInvalid = () => {
     if (tempFirstError === undefined) {
+      form.classList.add(VALIDATED_CLASS)
       tempFirstError = form.querySelector('input:invalid,select:invalid');
 
       const rect = tempFirstError.getBoundingClientRect();

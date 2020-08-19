@@ -699,13 +699,6 @@ a {
 .formBilan select:focus {
   box-shadow: 0 0 0.5rem #3E7AA8;
 }
-.formBilan select:invalid {
-  border-color: #FE5A4F;
-  color: #FE5A4F;
-}
-.formBilan select:invalid:focus {
-  box-shadow: 0 0 0.5rem #FE5A4F;
-}
 .formBilan input[type=radio] {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -733,14 +726,21 @@ a {
 .formBilan input[type=radio]:focus + label::before {
   border-color: #3E7AA8;
 }
-.formBilan input[type=radio]:invalid + label::before {
-  border-color: #feb8b3;
-}
-.formBilan input[type=radio]:focus:invalid + label::before {
-  border-color: #FE5A4F;
-}
 .formBilan [type=submit] {
   margin-top: 1rem;
+}
+.formBilan.is-validated select:invalid {
+  border-color: #FE5A4F;
+  color: #FE5A4F;
+}
+.formBilan.is-validated select:invalid:focus {
+  box-shadow: 0 0 0.5rem #FE5A4F;
+}
+.formBilan.is-validated input[type=radio]:invalid + label::before {
+  border-color: #feb8b3;
+}
+.formBilan.is-validated input[type=radio]:focus:invalid + label::before {
+  border-color: #FE5A4F;
 }
 
 .o-wrapper {
