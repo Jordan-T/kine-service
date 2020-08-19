@@ -19,19 +19,24 @@ a {
   color: inherit;
 }
 
-.c-button {
+%c-button {
   display: inline-block;
   background: rgba(110, 164, 202, 1);
   color: $white;
   font-size: $size-normal;
   padding: space(2) space(4);
   text-decoration: none;
+  border: 0;
   transition: 150ms ease-out;
 
   &:hover,
   &:focus {
     color: $primary;
   }
+}
+
+.c-button {
+  @extend %c-button;
 }
 
 .c-header {
@@ -323,8 +328,80 @@ a {
 }
 
 
-@import "helpers/_spacing.sass";
+.formBilan {
+  .d-none {
+    display: none;
+  }
 
+  label {
+    font-size: $size-medium;
+  }
+  label:not([for]) {
+    display: block;
+    margin-top: space(5);
+    margin-bottom: space(3);
+    font-size: $size-large;
+    line-height: 1.1;
+
+    &.required {
+      &::after {
+        content: "*";
+        display: inline-block;
+        margin-left: space(2);
+        color: $danger;
+        font-weight: 700;
+        font-size: 1.2em;
+        line-height: 1;
+      }
+    }
+
+    + div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+    & + label {
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        border: .5em solid $text-lighter;
+        background: $white;
+        margin-right: space(3);
+        vertical-align: middle;
+      }
+    }
+
+    &:checked + label {
+      &::before {
+        border-width: .25em;
+      }
+    }
+
+    &:focus + label {
+      &::before {
+        border-color: $text-light;
+      }
+    }
+  }
+
+  [type="submit"] {
+    @extend %c-button;
+    margin-top: space(4);
+  }
+}
 
 
 .o-wrapper {

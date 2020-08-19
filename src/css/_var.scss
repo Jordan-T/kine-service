@@ -23,6 +23,7 @@ $white-ter: var(--grey-200);
 $white-bis: var(--grey-100);
 $white: #FFF;
 
+$red: #FE5A4F;
 $blue:         #0d3c60;
 $purple:       hsl(271, 100%, 71%) !default;
 
@@ -69,7 +70,7 @@ $success: var(--success);
 $success-dark: var(--success-dark);
 $success-invert: $black;
 
-$danger: var(--danger);
+$danger: $red;
 $danger-dark: var(--danger-dark);
 $danger-invert: $black;
 
