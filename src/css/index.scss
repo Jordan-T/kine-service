@@ -270,10 +270,12 @@ a {
   grid-gap: space(5);
   align-items: stretch;
 
-  .has-appear {
-    @for $i from 1 through 3 {
-      &:nth-child(#{$i + 1}) {
-        transition-delay: ($i * 200ms);
+  @media (min-width: 768px) { 
+    .has-appear {
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i + 1}) {
+          transition-delay: ($i * 200ms);
+        }
       }
     }
   }
