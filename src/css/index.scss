@@ -21,22 +21,27 @@ a {
 
 %c-button {
   display: inline-block;
-  background: rgba(110, 164, 202, 1);
+  background: $blue-light;
   color: $white;
   font-size: $size-normal;
   padding: space(2) space(4);
   text-decoration: none;
-  border: 0;
+  border: 2px solid $blue-light;
   transition: 150ms ease-out;
+  appearance: none;
 
   &:hover,
   &:focus {
-    color: $primary;
+    background-color: $primary;
   }
 }
 
 .c-button {
   @extend %c-button;
+}
+
+.c-logo {
+  padding: space(2) 0;
 }
 
 .c-header {
@@ -336,9 +341,9 @@ a {
   label {
     font-size: $size-medium;
   }
+  .form-pb-question label,
   label:not([for]) {
     display: block;
-    margin-top: space(5);
     margin-bottom: space(3);
     font-size: $size-large;
     line-height: 1.1;
@@ -354,10 +359,32 @@ a {
         line-height: 1;
       }
     }
+  }
+  label:not([for]) {
+    margin-top: space(5);
 
     + div {
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  select {
+    padding: space(2) space(4);
+    font-size: $size-medium;
+    min-width: 175px;
+
+    &:focus {
+      box-shadow: 0 0 space(2) $blue-light;
+    }
+
+    &:invalid {
+      border-color: $danger;
+      color: $danger;
+
+      &:focus {
+        box-shadow: 0 0 space(2) $danger;
+      }
     }
   }
 
@@ -390,10 +417,16 @@ a {
       }
     }
 
-    &:focus + label {
-      &::before {
-        border-color: $text-light;
-      }
+    &:focus + label::before {
+      border-color: $text-light;
+    }
+
+    &:invalid + label::before {
+      border-color: $danger-light;
+    }
+
+    &:focus:invalid + label::before {
+      border-color: $danger;
     }
   }
 

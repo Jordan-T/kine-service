@@ -15,7 +15,6 @@ const appearBlocs = document.querySelectorAll('.js-appear');
 const threshold = .1;
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    console.log(entry, entry.intersectionRatio)
     if (entry.intersectionRatio > threshold) {
       entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);

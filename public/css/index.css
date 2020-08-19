@@ -384,16 +384,23 @@ a {
 
 .formBilan [type=submit], .c-button {
   display: inline-block;
-  background: #6ea4ca;
+  background: #3E7AA8;
   color: #FFF;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  border: 0;
+  border: 2px solid #3E7AA8;
   transition: 150ms ease-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .formBilan [type=submit]:hover, .c-button:hover, .formBilan [type=submit]:focus, .c-button:focus {
-  color: #0d3c60;
+  background-color: #0d3c60;
+}
+
+.c-logo {
+  padding: 0.5rem 0;
 }
 
 .c-header {
@@ -660,13 +667,14 @@ a {
 .formBilan label {
   font-size: 1rem;
 }
+.formBilan .form-pb-question label,
 .formBilan label:not([for]) {
   display: block;
-  margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
   line-height: 1.1;
 }
+.formBilan .form-pb-question label.required::after,
 .formBilan label:not([for]).required::after {
   content: "*";
   display: inline-block;
@@ -676,9 +684,27 @@ a {
   font-size: 1.2em;
   line-height: 1;
 }
+.formBilan label:not([for]) {
+  margin-top: 1.5rem;
+}
 .formBilan label:not([for]) + div {
   display: flex;
   flex-direction: column;
+}
+.formBilan select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  min-width: 175px;
+}
+.formBilan select:focus {
+  box-shadow: 0 0 0.5rem #3E7AA8;
+}
+.formBilan select:invalid {
+  border-color: #FE5A4F;
+  color: #FE5A4F;
+}
+.formBilan select:invalid:focus {
+  box-shadow: 0 0 0.5rem #FE5A4F;
 }
 .formBilan input[type=radio] {
   clip: rect(0 0 0 0);
@@ -705,7 +731,13 @@ a {
   border-width: 0.25em;
 }
 .formBilan input[type=radio]:focus + label::before {
-  border-color: #6EA4CA;
+  border-color: #3E7AA8;
+}
+.formBilan input[type=radio]:invalid + label::before {
+  border-color: #feb8b3;
+}
+.formBilan input[type=radio]:focus:invalid + label::before {
+  border-color: #FE5A4F;
 }
 .formBilan [type=submit] {
   margin-top: 1rem;

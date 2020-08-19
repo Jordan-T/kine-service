@@ -14,7 +14,7 @@
 <body>
   <header class="c-header">
     <div class="c-header__wrapper o-wrapper">
-      <a href="#" class="c-logo pt-2 pb-2">
+      <a href="#" class="c-logo">
         <img id="img" width="200" height="35" src="//placehold.it/200x35" alt="Kiné service" />
       </a>
       <nav class="c-header__nav c-nav js-nav">
@@ -57,7 +57,7 @@
 
 
       <img
-        src="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_1920,h_1000,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpeg" />
+        src="https://static.wixstatic.com/media/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpg/v1/fill/w_1920,h_1000,al_t,q_90,usm_0.66_1.00_0.01/84770f_573f9ee905a043e18a65f49e31c1c7e8.jpeg" alt="" />
     </picture>
     <div class="c-hero__main">
       <div class="o-wrapper">
@@ -105,8 +105,8 @@
       <form name="bilan" method="post" class="formBilan">
 
         <div class="form-pb-question">
-          <div><label for="bilan_pb" class="required">quel est votre pb?</label><select id="bilan_pb" name="bilan[pb]">
-              <option value="0"></option>
+          <div><label for="bilan_pb" class="required">quel est votre pb?</label><select id="bilan_pb" name="bilan[pb]" required>
+              <option value="">-- Choisir --</option>
               <option value="1">Epaule</option>
               <option value="2">Genou</option>
               <option value="3">Cou</option>
@@ -2405,6 +2405,7 @@
     </div>
   </footer>
   <script type="module" src="/_dist_/index.js"></script>
+  <script type="module" src="/_dist_/formBilan.js"></script>
 </body>
 
 </html>
