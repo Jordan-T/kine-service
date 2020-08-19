@@ -382,17 +382,25 @@ a {
   color: inherit;
 }
 
-.c-button {
+.formBilan [type=submit], .c-button {
   display: inline-block;
-  background: #6ea4ca;
+  background: #3E7AA8;
   color: #FFF;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  border: 2px solid #3E7AA8;
   transition: 150ms ease-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
-.c-button:hover, .c-button:focus {
-  color: #0d3c60;
+.formBilan [type=submit]:hover, .c-button:hover, .formBilan [type=submit]:focus, .c-button:focus {
+  background-color: #0d3c60;
+}
+
+.c-logo {
+  padding: 0.5rem 0;
 }
 
 .c-header {
@@ -653,558 +661,86 @@ a {
   margin-bottom: 0;
 }
 
-.is-marginless {
-  margin: 0 !important;
-}
-
-.is-paddingless {
-  padding: 0 !important;
-}
-
-.mt-0 {
-  margin-top: 0 !important;
-}
-
-.mr-0 {
-  margin-right: 0 !important;
-}
-
-.mb-0 {
-  margin-bottom: 0 !important;
-}
-
-.ml-0 {
-  margin-left: 0 !important;
-}
-
-.mx-0 {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.my-0 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.mt-n-0 {
-  margin-top: 0 !important;
-}
-
-.mr-n-0 {
-  margin-right: 0 !important;
-}
-
-.mb-n-0 {
-  margin-bottom: 0 !important;
-}
-
-.ml-n-0 {
-  margin-left: 0 !important;
-}
-
-.mx-n-0 {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.my-n-0 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.mt-1 {
-  margin-top: 0.25rem !important;
-}
-
-.mr-1 {
-  margin-right: 0.25rem !important;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem !important;
-}
-
-.ml-1 {
-  margin-left: 0.25rem !important;
-}
-
-.mx-1 {
-  margin-left: 0.25rem !important;
-  margin-right: 0.25rem !important;
-}
-
-.my-1 {
-  margin-top: 0.25rem !important;
-  margin-bottom: 0.25rem !important;
-}
-
-.mt-n-1 {
-  margin-top: -0.25rem !important;
-}
-
-.mr-n-1 {
-  margin-right: -0.25rem !important;
-}
-
-.mb-n-1 {
-  margin-bottom: -0.25rem !important;
-}
-
-.ml-n-1 {
-  margin-left: -0.25rem !important;
-}
-
-.mx-n-1 {
-  margin-left: -0.25rem !important;
-  margin-right: -0.25rem !important;
-}
-
-.my-n-1 {
-  margin-top: -0.25rem !important;
-  margin-bottom: -0.25rem !important;
-}
-
-.mt-2 {
-  margin-top: 0.5rem !important;
-}
-
-.mr-2 {
-  margin-right: 0.5rem !important;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem !important;
-}
-
-.ml-2 {
-  margin-left: 0.5rem !important;
-}
-
-.mx-2 {
-  margin-left: 0.5rem !important;
-  margin-right: 0.5rem !important;
-}
-
-.my-2 {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-}
-
-.mt-n-2 {
-  margin-top: -0.5rem !important;
-}
-
-.mr-n-2 {
-  margin-right: -0.5rem !important;
-}
-
-.mb-n-2 {
-  margin-bottom: -0.5rem !important;
-}
-
-.ml-n-2 {
-  margin-left: -0.5rem !important;
-}
-
-.mx-n-2 {
-  margin-left: -0.5rem !important;
-  margin-right: -0.5rem !important;
-}
-
-.my-n-2 {
-  margin-top: -0.5rem !important;
-  margin-bottom: -0.5rem !important;
-}
-
-.mt-3 {
-  margin-top: 0.75rem !important;
-}
-
-.mr-3 {
-  margin-right: 0.75rem !important;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem !important;
-}
-
-.ml-3 {
-  margin-left: 0.75rem !important;
-}
-
-.mx-3 {
-  margin-left: 0.75rem !important;
-  margin-right: 0.75rem !important;
-}
-
-.my-3 {
-  margin-top: 0.75rem !important;
-  margin-bottom: 0.75rem !important;
-}
-
-.mt-n-3 {
-  margin-top: -0.75rem !important;
-}
-
-.mr-n-3 {
-  margin-right: -0.75rem !important;
-}
-
-.mb-n-3 {
-  margin-bottom: -0.75rem !important;
-}
-
-.ml-n-3 {
-  margin-left: -0.75rem !important;
-}
-
-.mx-n-3 {
-  margin-left: -0.75rem !important;
-  margin-right: -0.75rem !important;
-}
-
-.my-n-3 {
-  margin-top: -0.75rem !important;
-  margin-bottom: -0.75rem !important;
-}
-
-.mt-4 {
-  margin-top: 1rem !important;
-}
-
-.mr-4 {
-  margin-right: 1rem !important;
-}
-
-.mb-4 {
-  margin-bottom: 1rem !important;
-}
-
-.ml-4 {
-  margin-left: 1rem !important;
-}
-
-.mx-4 {
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
-}
-
-.my-4 {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.mt-n-4 {
-  margin-top: -1rem !important;
-}
-
-.mr-n-4 {
-  margin-right: -1rem !important;
-}
-
-.mb-n-4 {
-  margin-bottom: -1rem !important;
-}
-
-.ml-n-4 {
-  margin-left: -1rem !important;
-}
-
-.mx-n-4 {
-  margin-left: -1rem !important;
-  margin-right: -1rem !important;
-}
-
-.my-n-4 {
-  margin-top: -1rem !important;
-  margin-bottom: -1rem !important;
-}
-
-.mt-5 {
-  margin-top: 1.5rem !important;
-}
-
-.mr-5 {
-  margin-right: 1.5rem !important;
-}
-
-.mb-5 {
-  margin-bottom: 1.5rem !important;
-}
-
-.ml-5 {
-  margin-left: 1.5rem !important;
-}
-
-.mx-5 {
-  margin-left: 1.5rem !important;
-  margin-right: 1.5rem !important;
-}
-
-.my-5 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-}
-
-.mt-n-5 {
-  margin-top: -1.5rem !important;
-}
-
-.mr-n-5 {
-  margin-right: -1.5rem !important;
-}
-
-.mb-n-5 {
-  margin-bottom: -1.5rem !important;
-}
-
-.ml-n-5 {
-  margin-left: -1.5rem !important;
-}
-
-.mx-n-5 {
-  margin-left: -1.5rem !important;
-  margin-right: -1.5rem !important;
-}
-
-.my-n-5 {
-  margin-top: -1.5rem !important;
-  margin-bottom: -1.5rem !important;
-}
-
-.mt-6 {
-  margin-top: 3rem !important;
-}
-
-.mr-6 {
-  margin-right: 3rem !important;
-}
-
-.mb-6 {
-  margin-bottom: 3rem !important;
-}
-
-.ml-6 {
-  margin-left: 3rem !important;
-}
-
-.mx-6 {
-  margin-left: 3rem !important;
-  margin-right: 3rem !important;
-}
-
-.my-6 {
-  margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
-}
-
-.mt-n-6 {
-  margin-top: -3rem !important;
-}
-
-.mr-n-6 {
-  margin-right: -3rem !important;
-}
-
-.mb-n-6 {
-  margin-bottom: -3rem !important;
-}
-
-.ml-n-6 {
-  margin-left: -3rem !important;
-}
-
-.mx-n-6 {
-  margin-left: -3rem !important;
-  margin-right: -3rem !important;
-}
-
-.my-n-6 {
-  margin-top: -3rem !important;
-  margin-bottom: -3rem !important;
-}
-
-.pt-0 {
-  padding-top: 0 !important;
-}
-
-.pr-0 {
-  padding-right: 0 !important;
-}
-
-.pb-0 {
-  padding-bottom: 0 !important;
-}
-
-.pl-0 {
-  padding-left: 0 !important;
-}
-
-.px-0 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.py-0 {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.pt-1 {
-  padding-top: 0.25rem !important;
-}
-
-.pr-1 {
-  padding-right: 0.25rem !important;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem !important;
-}
-
-.pl-1 {
-  padding-left: 0.25rem !important;
-}
-
-.px-1 {
-  padding-left: 0.25rem !important;
-  padding-right: 0.25rem !important;
-}
-
-.py-1 {
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-}
-
-.pt-2 {
-  padding-top: 0.5rem !important;
-}
-
-.pr-2 {
-  padding-right: 0.5rem !important;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem !important;
-}
-
-.pl-2 {
-  padding-left: 0.5rem !important;
-}
-
-.px-2 {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
-.py-2 {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-}
-
-.pt-3 {
-  padding-top: 0.75rem !important;
-}
-
-.pr-3 {
-  padding-right: 0.75rem !important;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem !important;
-}
-
-.pl-3 {
-  padding-left: 0.75rem !important;
-}
-
-.px-3 {
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
-}
-
-.py-3 {
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
-}
-
-.pt-4 {
-  padding-top: 1rem !important;
-}
-
-.pr-4 {
-  padding-right: 1rem !important;
-}
-
-.pb-4 {
-  padding-bottom: 1rem !important;
-}
-
-.pl-4 {
-  padding-left: 1rem !important;
-}
-
-.px-4 {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
-
-.py-4 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-
-.pt-5 {
-  padding-top: 1.5rem !important;
-}
-
-.pr-5 {
-  padding-right: 1.5rem !important;
-}
-
-.pb-5 {
-  padding-bottom: 1.5rem !important;
-}
-
-.pl-5 {
-  padding-left: 1.5rem !important;
-}
-
-.px-5 {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-}
-
-.py-5 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-}
-
-.pt-6 {
-  padding-top: 3rem !important;
-}
-
-.pr-6 {
-  padding-right: 3rem !important;
-}
-
-.pb-6 {
-  padding-bottom: 3rem !important;
-}
-
-.pl-6 {
-  padding-left: 3rem !important;
-}
-
-.px-6 {
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
-}
-
-.py-6 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+.formBilan .d-none {
+  display: none;
+}
+.formBilan label {
+  font-size: 1rem;
+}
+.formBilan .form-pb-question label,
+.formBilan label:not([for]) {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+.formBilan .form-pb-question label.required::after,
+.formBilan label:not([for]).required::after {
+  content: "*";
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #FE5A4F;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1;
+}
+.formBilan label:not([for]) {
+  margin-top: 1.5rem;
+}
+.formBilan label:not([for]) + div {
+  display: flex;
+  flex-direction: column;
+}
+.formBilan select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  min-width: 175px;
+}
+.formBilan select:focus {
+  box-shadow: 0 0 0.5rem #3E7AA8;
+}
+.formBilan input[type=radio] {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.formBilan input[type=radio] + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 0.5em solid #D1E0EB;
+  background: #FFF;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+.formBilan input[type=radio]:checked + label::before {
+  border-width: 0.25em;
+}
+.formBilan input[type=radio]:focus + label::before {
+  border-color: #3E7AA8;
+}
+.formBilan [type=submit] {
+  margin-top: 1rem;
+}
+.formBilan.is-validated select:invalid {
+  border-color: #FE5A4F;
+  color: #FE5A4F;
+}
+.formBilan.is-validated select:invalid:focus {
+  box-shadow: 0 0 0.5rem #FE5A4F;
+}
+.formBilan.is-validated input[type=radio]:invalid + label::before {
+  border-color: #feb8b3;
+}
+.formBilan.is-validated input[type=radio]:focus:invalid + label::before {
+  border-color: #FE5A4F;
 }
 
 .o-wrapper {
