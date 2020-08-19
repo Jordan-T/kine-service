@@ -265,10 +265,18 @@ a {
 }
 
 .c-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: space(5);
+  display: flex;
+  margin: (space(-5) / 2);
   align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .c-card {
+    max-width: 360px;
+    flex-grow: 1;
+    flex-basis: 260px;
+    margin: (space(5) / 2);
+  }
 
   @media (min-width: 768px) { 
     .has-appear {
